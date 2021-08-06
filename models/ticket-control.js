@@ -56,6 +56,7 @@ class TicketControl {
         return `Ticket ${ticket.number}`;
     }
 
+    // Atender Ticket
     attendTicket(desk) {
         // No tenemos tickets
         if (this.tickets.length === 0) return null;
