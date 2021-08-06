@@ -18,6 +18,7 @@ class TicketControl {
         this.init();
     }
 
+    // Obtener ticket del archivo JSON
     get toJSON() {
         return {
             latest: this.latest,
