@@ -46,6 +46,7 @@ class TicketControl {
         fs.writeFileSync(dbPath, JSON.stringify(this.toJSON));
     }
 
+    // Siguiente Ticket
     next() {
         this.latest += 1;
         const ticket = new Ticket(this.latest, null);
