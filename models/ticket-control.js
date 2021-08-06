@@ -40,6 +40,7 @@ class TicketControl {
         }
     }
 
+    // Guardar Ticket en DB(Json)
     saveDB() {
         const dbPath = path.join(__dirname, '../db/data.json');
         fs.writeFileSync(dbPath, JSON.stringify(this.toJSON));
